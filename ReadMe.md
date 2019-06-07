@@ -15,5 +15,5 @@ https://github.com/re-search/gpt2-estimator
 
 https://github.com/Santosh-Gupta/Research2Vec
 
-https://github.com/Santosh-Gupta/Research2Vec
+https://github.com/Santosh-Gupta/Lit2Vec
 
