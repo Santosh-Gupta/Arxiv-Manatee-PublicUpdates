@@ -2,7 +2,7 @@
   <img src="https://snag.gy/cwnUGB.jpg">
 </p>
 
-This is the public repo we're going to be using to post updates on Arxiv-Manatee, which are going to be tools for searching through Arxiv-Sanity papers. 
+This is the public repo we're going to be using to post updates on Arxiv-Manatee, which are going to be tools for searching through Arxiv-Sanity papers. We are looking to use deep language models to produce keyword/phrase invarient searches through machine learning papers 
 
 If you would like be involved, feel free to reach out to Research2Vec@gmail.com. We could use those with experience with Tensorflow/Keras/Pytorch, 
 NLP, abtractive summarization, and text/data processing, but we're open to considering anyone!
