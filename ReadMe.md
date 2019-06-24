@@ -21,6 +21,8 @@ https://github.com/Santosh-Gupta/Lit2Vec
 
 6-23-2019
 
+### DataSet
+
 2nd dataset is in process of being created. Dataset design is inspired by this paper https://arxiv.org/abs/1905.07695 Structured Summarization of Academic Publications , by Alexios Gidiotis, Grigorios Tsoumakas. The data set they have created is a reserach paper sectional summarizar, which is exactly I am working on! The dataset design is they use papers with structured abstracts (so each abstract has a Intro, Background, Methods, Results, Conclusion, etc. section), and use each section of the structured abstract to act as a summary for the corresponding main section of the paper. 
 
 There are several differences between the dataset they have released and the one I will release sometime this week:
@@ -34,6 +36,30 @@ There are several differences between the dataset they have released and the one
 -My dataset has digits filtered out, I do not think Gidiotis/Tsoumakas filtered out any digits. The summarization I am focused on is for concepts rather than facts/metics/quantitative information, so I removed all digits from both the source and summary so that the summarizer I am designing can focus on concept summarization. 
 
 -Gidiotis/Tsoumakas classified sections marked as 'experimental', 'experiments', and 'experiment' as 'resuts'. From my own review of my data, those sections to me are closer in meaning to 'methods', so that's thats how I classified those sections. 
+
+### Summarization Architectures
+
+I am considering two main summarization architectures, and potentially a 3rd for the time being:
+
+"Efficient Adaptation of Pretrained Transformers for Abstractive Summarization" from Allen AI / University of Washington / Microsoft Research
+https://arxiv.org/pdf/1906.00138.pdf
+https://github.com/Andrew03/transformer-abstractive-summarization
+
+"Get To The Point: Summarization with Pointer-Generator Networks" from Stanford / Google Brain 
+https://arxiv.org/abs/1704.04368
+https://github.com/yaserkl/RLSeq2Seq
+https://github.com/abisee/pointer-generator
+
+"Unified Language Model Pre-training for Natural Language Understanding and Generation" from Microsoft Research
+https://arxiv.org/abs/1905.03197
+
+First, I am focusing on abstractive summarization, as opposed to extractive summarization. This is because I want the paper retrieval model that this will incorporate to be robust against phrase and keyword variations. Also, the summaries in my summarization dataset often do not contain the exact phrasing in the source text. 
+
+I like "Efficient Adaptation of Pretrained Transformers for Abstractive Summarization" because they evaluated their results by surverying people to judge the summaries. ROUGE currently is the most commanly used metric to get a quantitative score of summary quality, but it may not translate fully to a human's qualitative assessment of summary quality. 
+
+Pointer-Generator networks are the most commonly used method for abstractive scientific summarization. It was used in "Structured Summarization of Academic Publications" https://arxiv.org/abs/1905.07695 , "Ontology-Aware Clinical Abstractive Summarization" https://arxiv.org/abs/1804.05685, and in "Domain-Aware Abstractive Text Summarization for Medical Documents" https://www.semanticscholar.org/paper/Domain-Aware-Abstractive-Text-Summarization-for-Gigioli-Sagar/6f46d1520c18daa93109954652bcd377b86538c0 . It seems that since scientific texts contain so much domain-specific phrasing and terminology, Pointer-Generators are well suited to abstractive summarization of those texts since they can point to whatever the laguage model has trouble summarizing. 
+
+Finally, as far as I know "Unified Language Model Pre-training for Natural Language Understanding and Generation" as achieved the highest scores for abstractive summarization challenges. However, their github repo has note been released yet. So first set of summaries, I will be considering the first two options for now. 
 
 -------------
 
