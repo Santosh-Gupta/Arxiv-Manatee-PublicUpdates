@@ -31,7 +31,7 @@ There are several differences between the dataset they have released and the one
 
 - Gidiotis/Tsoumakas has data from 712,911 papers. My dataset will have data from ~1,300,000 papers.
 
-- My dataset has digits filtered out, I do not think Gidiotis/Tsoumakas filtered out any digits. The summarization I am focused on is for concep, rather than facts/metics/quantitative information, so I removed all digits from both the source and summary text to empahsize concept summarization. 
+- My dataset has digits filtered out, I do not think Gidiotis/Tsoumakas filtered out any digits. The summarization I am focused on is for concepts, rather than facts/metics/quantitative information, so I removed all digits from both the source and summary text to empahsize concept summarization. 
 
 - Gidiotis/Tsoumakas classified sections marked as 'experimental', 'experiments', and 'experiment' as 'resuts'. From my own review of my data, those sections to me are closer in meaning to 'methods', so that's thats how I classified those sections. 
 
