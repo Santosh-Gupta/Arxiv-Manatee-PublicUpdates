@@ -23,7 +23,9 @@ UPDATE 6-23-2019
 
 ### DataSet
 
-2nd dataset is in process of being created. Dataset design is inspired by this paper https://arxiv.org/abs/1905.07695 Structured Summarization of Academic Publications , by Alexios Gidiotis, Grigorios Tsoumakas. The data set they have created is a reserach paper sectional summarizar, which is exactly I am working on! The dataset design is they use papers with structured abstracts (so each abstract has a Intro, Background, Methods, Results, Conclusion, etc. section), and use each section of the structured abstract to act as a summary for the corresponding main section of the paper. 
+2nd dataset is in process of being created. I uploaded the code I used to create the dataset from the Semantic Scholar corpus to this repo. 
+
+Dataset design is inspired by this paper https://arxiv.org/abs/1905.07695 Structured Summarization of Academic Publications , by Alexios Gidiotis, Grigorios Tsoumakas. The data set they have created is a reserach paper sectional summarizar, which is exactly I am working on! The dataset design is they use papers with structured abstracts (so each abstract has a Intro, Background, Methods, Results, Conclusion, etc. section), and use each section of the structured abstract to act as a summary for the corresponding main section of the paper. 
 
 There are several differences between the dataset they have released and the one I will release sometime this week:
 
