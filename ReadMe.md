@@ -27,6 +27,10 @@ There are several differences between the dataset they have released and the one
 
 -The papers in the Gidiotis/Tsoumakas dataset are directly from pubmed, and are in the field of chem/bio/medical. The papers from my dataset are from the Semantic Scholar corpus ( https://api.semanticscholar.org/corpus/ ). I initiated starting my own dataset because I wanted to have an equivilant dataset that is for summarizing CS papers. Unfortunatly, when the SemanticScholar Corpus papers where filtered to those which only contain structured abstracts, 95% of those were from the biomedical domain. It looks like it is very rare that structured abstracts are used outside the biomedical domian. Since Pubmed is a source of research papers for the Semantic Scholar Corpus, there will probably be much overlap. 
 
+-Gidiotis/Tsoumakas used XML to directly match abstract sections from main paper sections. I have directly downloaded the PDFs, then use Allen AI's Science Parse (https://github.com/allenai/science-parse) to split up the papers into it's headers and sections, and then matched the abstract section with the main paper sections. 
+
+-Gidiotis/Tsoumakas has data from 712,911 papers. My dataset will have data from ~1,300,000 papers.
+
 -My dataset has digits filtered out, I do not think Gidiotis/Tsoumakas filtered out any digits. The summarization I am focused on is for concepts rather than facts/metics/quantitative information, so I removed all digits from both the source and summary so that the summarizer I am designing can focus on concept summarization. 
 
 -Gidiotis/Tsoumakas classified sections marked as 'experimental', 'experiments', and 'experiment' as 'resuts'. From my own review of my data, those sections to me are closer in meaning to 'methods', so that's thats how I classified those sections. 
