@@ -15,6 +15,12 @@ Our previous projects:
 
 ---
 
+## Update 06-30-19
+
+Not the most exciting update, but the sectional summarization dataset is still processing. I'm downloading about ~1.2 million papers, and processing each one of them into source:summary pairs using [Allen AI's Science Parse](https://github.com/allenai/science-parse). I am about 60% done, so the dataset should be done by next week. And yes, the dataset will be publicly availible! 
+
+---
+
 ## Update 2019-23-06
 
 ### DataSet
