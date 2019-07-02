@@ -15,11 +15,13 @@ Our previous projects:
 
 ## Update 07-1-19
 
-We are proud to present a summarization dataset for machine learning concepts. 
+I am proud to present a summarization dataset for machine learning concepts. 
 
 https://drive.google.com/open?id=1B8qqHQNXZ4OVMKpGHAvrxPxdQlKt2Ia4
 
 The dataset contains all 89252 machine learning papers ( cs.[CV|CL|LG|AI|NE]/stat.ML ) from Arxiv (1993-June 2019). The 'summary' is the title of the paper, and the 'source' is the abstract of each paper.  
+
+I am focused on concept summarization (as opposed to factual summarization), so all special characters and digits have been filtered out, so that the summarizars that are trained over this data can focus on the concepts described in the text. 
 
 ---
 
