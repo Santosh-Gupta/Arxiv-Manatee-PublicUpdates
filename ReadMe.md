@@ -13,6 +13,15 @@ Our previous projects:
 - https://github.com/Santosh-Gupta/Research2Vec
 - https://github.com/Santosh-Gupta/Lit2Vec
 
+## Update 10-21-19 
+
+This project will just a extractive summarizer which I have recently finished training. Details on the training data and model released can be found here
+https://github.com/Santosh-Gupta/ScientificSummarizationDataSets
+. 
+
+Currently, I am analyzing the input length distributions of the data to see the batching and padding should be handled. I asked a question on the HuggingFace Transforers repo for insights on this consideration
+https://github.com/huggingface/transformers/issues/1581
+
 ## Update 10-20-19
 
 I haven't been updating this page too, much, but I will be now, to keep track of the considerations and things I learn a long the way. 
