@@ -13,6 +13,24 @@ Our previous projects:
 - https://github.com/Santosh-Gupta/Research2Vec
 - https://github.com/Santosh-Gupta/Lit2Vec
 
+## Update 10-20-19
+
+I haven't been updating this page too, much, but I will be now, to keep track of the considerations and things I learn a long the way. 
+
+Current Considerations:
+
+I am sampling data with different distributions of input lengths. Since inputs need to be padded to the maximum length in the batch, I am wondering if I should seperate these batches while inputting them into the Bert model. This is fully described in this question I asked
+https://github.com/huggingface/transformers/issues/1581
+
+I would like to use Pytorcher's DataSet and DataLoader classes, and I am trying to figoure how to handle sampling. Since the training will have negative sampling, I will be retrieving several random samples during training. Since I do not watch the loading of files to be a bottle neck in the training, I would like my pipeline to be this: Random select a file to open, but then go down each sample in that file as training inputs. 
+
+My data is in multiple files, with multiple lines, as described here
+https://discuss.pytorch.org/t/dataloaders-multiple-files-and-multiple-rows-per-column-with-lazy-evaluation/11769
+But the solution presentented is for selected any sample, at random. 
+
+I think for my requirements, I need to define a custom sampler here https://pytorch.org/docs/stable/data.html#torch.utils.data.Sampler
+
+
 ## Update 07-1-19
 
 I am proud to present a summarization dataset for machine learning concepts. 
