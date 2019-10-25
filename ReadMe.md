@@ -13,11 +13,24 @@ Our previous projects:
 - https://github.com/Santosh-Gupta/Research2Vec
 - https://github.com/Santosh-Gupta/Lit2Vec
 
+## Update 10-25-19 
+
+I am currently processing the final dataset for training, which will take a while to complete. In the meanwhile, I am trying to figure out how to most optimally use the Hugingface transformers with the newly updated Pytorch XLA library for TPU training. Details here
+
+https://github.com/pytorch/xla/issues/1217
+https://github.com/huggingface/transformers/issues/1540#issuecomment-543406725
+
+Also, in DocProduct, a Relu was used as the final non-linearity for creating the embeddings. Although DocProduct ebmedddings had great retrieval properties, I am not sure if it's the best non-linearity for creating embeddings which will then be used in cos similarity. More details here. 
+
+https://www.reddit.com/r/LanguageTechnology/comments/dn3zam/thought_experiment_is_relu_the_best_activation/?
+
+
+
 ## Update 10-21-19 
 
 This project will just a extractive summarizer which I have recently finished training. Details on the training data and model released can be found here
 https://github.com/Santosh-Gupta/ScientificSummarizationDataSets
-. 
+
 
 Currently, I am analyzing the input length distributions of the data to see the batching and padding should be handled. I asked a question on the HuggingFace Transforers repo for insights on this consideration
 https://github.com/huggingface/transformers/issues/1581
