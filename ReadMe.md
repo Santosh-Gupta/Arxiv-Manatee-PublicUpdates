@@ -13,6 +13,8 @@ Our previous projects:
 - https://github.com/Santosh-Gupta/Research2Vec
 - https://github.com/Santosh-Gupta/Lit2Vec
 
+I update this Readme with questions and problems I run into through the project. If you have any insight to these, please give feedback through opening a new issue. 
+
 ## Update 10-25-19 
 
 I am currently processing the final dataset for training, which will take a while to complete. In the meanwhile, I am trying to figure out how to most optimally use the Hugingface transformers with the newly updated Pytorch XLA library for TPU training. Details here
