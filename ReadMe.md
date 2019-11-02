@@ -15,6 +15,11 @@ Our previous projects:
 
 I update this Readme with questions and problems I run into through the project. If you have any insight to these, please give feedback through opening a new issue. 
 
+## Update 11-1-19
+
+Not much of an update this week. At the moment, I'm trying to figure out what are the best practices for the HuggingFace Transformers library, specifically for training similarity on passages of text. More details in this issue
+https://github.com/huggingface/transformers/issues/1700
+
 ## Update 10-25-19 
 
 I am currently processing the final dataset for training, which will take a while to complete. In the meanwhile, I am trying to figure out how to most optimally use the Hugingface transformers with the newly updated Pytorch XLA library for TPU training. Details here
